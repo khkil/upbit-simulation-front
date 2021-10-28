@@ -1,0 +1,10 @@
+//MHX_DOMAIN
+export const CLOUD_NUMBER = 0;
+export const CLOUD_MASTER_DOMAIN = "micehub-gov.com";
+export const SERVER28_NUMBER = 1;
+export const SERVER28_MASTER_DOMAIN = "www.micehub.com";
+
+//EXHIBITION
+export const EXHIBITION_LIST_REQUEST = "EXHIBITION_LIST_REQUEST";
+export const EXHIBITION_LIST_SUCCESS = "EXHIBITION_LIST_SUCCESS";
+export const EXHIBITION_LIST_FAIL = "EXHIBITION_LIST_FAIL";
