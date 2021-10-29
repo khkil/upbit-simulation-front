@@ -19,7 +19,7 @@ export default function MainPage() {
 
   return (
     <Container>
-      <Grid container spacing={3}>
+      <Grid container spacing={2}>
         <Grid item xs={8}>
           <Paper className={classes.paper}> 
             <MarketDetail/>
