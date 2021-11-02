@@ -1,41 +1,19 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Paper, Tabs, Tab, List, Divider, ListItem, ListItemIcon, ListItemText, ListSubheader  } from '@material-ui/core';
+import { List, ListItem, ListItemIcon, ListItemText, ListSubheader  } from '@material-ui/core';
 import Market from './Market';
-import { ArrowDropDown, ArrowDropUp, ExpandLess } from '@material-ui/icons';
+import { ArrowDropDown, ArrowDropUp } from '@material-ui/icons';
 import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles({
-  root: {
-    flexGrow: 1,
-  },
-  tab: {
-    minWidth: "33.3%",
-  }
+ 
 });
 
 const AllMarket = () => {
-  const classes = useStyles();
-  const [value, setValue] = React.useState(0);
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
+  
 
   return (
-    <Paper className={classes.root}>
-      <Tabs
-        value={value}
-        onChange={handleChange}
-        indicatorColor="primary"
-        textColor="primary"
-        centered
-      >
-        <Tab className={classes.tab} label="전체" />
-        <Tab className={classes.tab} label="보유" />
-        <Tab className={classes.tab} label="관심" />
-      </Tabs>
-      <Divider />
+    
       <List component="nav" aria-label="main mailbox folders">
         <ListSubheader>
           <Link style={{marginLeft: "2rem", fontSize: "9px"}}>한글명 <ArrowDropUp/></Link>
@@ -47,7 +25,6 @@ const AllMarket = () => {
         <Market/>
 
       </List>
-    </Paper>
   );
 }
 

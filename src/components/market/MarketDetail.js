@@ -10,3 +10,4 @@ const MarketDetail = () => {
 }
 
 export default MarketDetail;
+
